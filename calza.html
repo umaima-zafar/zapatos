@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Tilt+Neon&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="heroStyle.css">
+
+    <title>Calza - All Products</title>
+</head>
+<body>
+
+    <!-- Side Navigation -->
+
+    <div class="sideNavContainer">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <ul class="sideNav">
+            <li class="landingPages" style="margin-top: 0;">
+                <i class="fa-solid fa-angle-right"></i><a href="men.html">Men</a>
+                <ul class="subLandingPages">
+                    <li><a href="Mensneakers.html">Sneakers</a></li>
+                    <li><a href="Mensandals.html">Sandals</a></li>
+                    <li><a href="Menpeshawarichappals.html">Peshawari Chappals</a></li>
+                </ul>
+            </li>
+            <li class="landingPages">
+                <i class="fa-solid fa-angle-right"></i><a href="women.html">Women</a>
+                <ul class="subLandingPages">
+                    <li><a href="womenkhussas.html">Khussas</a></li>
+                    <li><a href="womenchappals.html">Chappals</a></li>
+                    <li><a href="womenheels.html">Heels</a></li>
+                    <li><a href="womensandals.html">Sandals</a></li>
+                    <li><a href="womensneakers.html">Sneakers</a></li>
+                </ul>
+            </li>
+            <li class="landingPages">
+                <i class="fa-solid fa-angle-right"></i><a href="adidas.html">Shop By Brand</a>
+                <ul class="subLandingPages">
+                    <li><a href="adidas.html">Adidas</a></li>
+                    <li><a href="ndure.html">Ndure</a></li>
+                    <li><a href="calza.html">Calza</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navBottom"></div>
+    </div>
+    
+ <!-- Navigation bar -->
+    
+     <div class="line">
+        Free Delivery on all Orders above Rs. 2500. 
+    </div>
+
+    <nav id="nav">
+
+        <i class="fa-solid fa-bars bars"></i>
+
+        <div class="logo">
+            <a href="index.html"><img src="mylogo.png" alt="Logo"></a>
+        </div>
+
+        <div class="listcontainer">
+            <ul class="mainlist" type="none">
+                <li><a href="men.html">Men</a>
+                    <ul type="none" class="sub">
+                        <a href="Mensneakers.html">
+                            <li>Sneakers</li>
+                        </a>
+                        <a href="Mensandals.html">
+                            <li>Sandals</li>
+                        </a>
+                        <a href="Menpeshawarichappals.html">
+                            <li>Peshawari Chappals</li>
+                        </a>
+                    </ul>
+                </li>
+                <li><a href="women.html" id="forWomen">Women</a>
+                    <ul type="none" class="sub">
+                        <a href="womenkhussas.html">
+                            <li>Khussas</li>
+                        </a>
+                        <a href="womenchappals.html">
+                            <li>Chappals</li>
+                        </a>
+                        <a href="womenheels.html">
+                            <li>Heels</li>
+                        </a>
+                        <a href="womensandals.html">
+                            <li>Sandals</li>
+                        </a>
+                        <a href="womensneakers.html">
+                            <li>Sneakers</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>Shop By Brand
+                    <ul type="none" class="sub">
+                        <a href="adidas.html">
+                            <li>Adidas</li>
+                        </a>
+                        <a href="ndure.html">
+                            <li>Ndure</li>
+                        </a>
+                        <a href="calza.html">
+                            <li>Calza</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    <div id="icons">
+        <div class="sideCart" data-tooltip="Your Cart">
+            <a><i class="fa-solid fa-cart-shopping icon" onclick="openmysidecart()" id="carticon"></i></a>
+        </div>
+    </div>
+
+    </nav>
+
+    <hr>
+
+    <!-- Shopping Cart -->
+
+    <div id="mysidecart">
+        <div class="header">
+        <h1 class="cartheading">Cart</h1>
+        <a onclick="closemysidecart()" class="closebtn" id="closebutton">&times;</a>
+        </div>
+
+        <div class="cartcontent">
+            <div class="cartitem" id="cartitemcontainer">
+                <p id="cartisempty">Your Cart Is Empty</p>
+                <div class="cartitemadded"></div>
+            </div>
+
+            <div id="footer">
+                <h2>Total</h2>
+                <h3 id="total">Rs 0</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+
+    <h1>Calza - All Products</h1>
+
+    <div class="product-cards-container">
+
+        <div class="first sneakitem">
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="ccp1.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+
+                <div class="addtocart" id="two" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ccp2.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ccp3.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ccp4.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+        </div>
+    
+        <div class="second sneakitem">
+         
+            <div class="sneakimages">
+                   
+            <div class="addtocart" data-tooltip="Add To Cart">
+                <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="csm1.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                <img src="csm2.jpg" class="image"> 
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                <img src="csm3.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                <img src="csm4.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+        </div>
+    
+        <div class="third sneakitem">
+
+            <div class="sneakimages">
+                   
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ck1.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ck2.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ck3.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                    </div>
+
+                 <img src="ck4.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+    
+
+        </div>
+
+        <div class="fourth sneakitem">
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="csan1.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 2,450</p>
+            </div>
+    
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="csan2.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 2,450</p>
+            </div>
+
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+                
+                <img src="csan3.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 2,450</p>
+            </div>
+
+
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+                
+                <img src="csan4.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 2,450</p>
+            </div>
+
+        </div>
+    
+        <div class="fifth sneakitem">
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+                
+                <img src="cp1.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,300</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+                
+                <img src="cp2.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,300</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+                
+                <img src="cp3.jpg" class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,300</p>
+            </div>
+    
+            <div class="sneakimages">
+                
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+                
+                <img src="cp4.jpg"  class="image">
+                <h3>Calza</h3>
+                <p class="priceofitem">Rs 4,300</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Footer -->
+
+    
+<div id="end">
+
+    <div class="endingcontent">
+    
+    <div id="first" class="endiv">
+        <p> Contact Us</p>
+    
+        <br>
+    
+        <ul type="none">
+            <li>+92 306 2561378</li>
+            <li>zapatos@gmail.com.pk</li>
+        </ul>
+    </div>
+    
+    <div id="second" class="endiv">
+        <p>Terms And Conditions</p>
+    
+        <ul type="none">
+            <li>Terms Of Service</li>
+            <li>Privacy Policy</li>
+            <li>Exchange Policy</li>
+            <li>Refund Policy</li>
+        </ul>
+        
+    </div>
+    
+    <div id="third" class="endiv">
+        <p>About Us</p>
+    
+        <ul type="none">
+            <li>Customer Reviews</li>
+            <li>FAQs</li>
+            <li>Newsletter</li>
+        </ul>
+        
+    </div>
+    
+    </div>
+    
+    <br><br>
+    <center><hr style="width:95%"></center>
+    
+    <div id="endicons">
+        <i class="fa-brands fa-facebook endicon"></i>
+        <i class="fa-brands fa-facebook-messenger endicon"></i>
+        <i class="fa-brands fa-instagram endicon"></i>
+        <i class="fa-brands fa-twitter endicon"></i>
+    </div>
+      
+    </div>
+
+<script>
+
+// For Changing The Cart Image   
+let cartImg = document.getElementsByClassName('cart');
+let addtocart = document.getElementsByClassName('addtocart');
+let cartisempty = document.getElementById('cartisempty');
+let cartitemadded = document.getElementsByClassName('cartitemadded');
+
+for (let i = 0; i < cartImg.length; i++) {
+    cartImg[i].addEventListener('click', changeCartImage);
+}
+
+function changeCartImage(event) {
+    let clickedCartImg = event.currentTarget;
+    let clickedAddToCart = clickedCartImg.parentElement;
+
+    if (clickedCartImg.src.includes('blankcart.png')) {
+
+        clickedCartImg.src = 'filledcart.png';
+        clickedAddToCart.dataset.tooltip = 'Added To Cart';
+        cartisempty.style.display = 'none';
+
+        for (let i = 0; i < cartitemadded.length; i++) {
+        cartitemadded[i].style.display = 'block';
+        }
+        }
+        
+     else {
+        clickedCartImg.src = 'blankcart.png';
+        clickedAddToCart.dataset.tooltip = 'Add To Cart';
+        cartisempty.style.display = 'block';
+       
+        for (let i = 0; i < cartitemadded.length; i++) {
+            cartitemadded[i].style.display = 'none';
+        }
+    }
+}
+
+
+// Add To Cart
+
+let addtocartbuttons = document.getElementsByClassName('addtocart');
+
+for (let i = 0; i < addtocartbuttons.length; i++) {
+            let button = addtocartbuttons[i];
+            button.addEventListener('click', addtocartclicked);
+        }
+
+function addtocartclicked(event){
+    let button = event.target;
+    let shopitem = button.parentElement.parentElement;
+    let price = shopitem.getElementsByClassName('priceofitem')[0].innerText;
+    let imagesrc = shopitem.getElementsByClassName('image')[0].src; 
+    additemtocart(price, imagesrc)
+}
+
+
+function additemtocart(price, imagesrc){
+    let cartrow = document.createElement('div');
+    cartrow.classList.add('cartitemadded');
+    let cartitems = document.getElementsByClassName('cartitemadded')[0];
+    let cartrowcontents = `
+            <div class="cartitemadded">
+            <div class="row">
+            <img src="${imagesrc}">
+                <div class="price">
+                    <p>${price}</p>
+                </div>
+            </div>
+            </div>`;
+    cartrow.innerHTML = cartrowcontents;
+    cartitems.append(cartrow);
+}
+
+// For displaying and hiding the side cart menu
+
+let mysidecart = document.getElementById('mysidecart');
+
+function openmysidecart(){
+    mysidecart.style.width = "40%";
+}
+
+function closemysidecart(){
+    mysidecart.style.width = "0";
+}
+
+
+
+
+    
+ </script>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+

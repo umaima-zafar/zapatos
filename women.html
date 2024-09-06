@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="mwStyle.css" rel="stylesheet" type="text/css">
+
+    <title>Women Footwear</title>
+    <style>
+        #womenhome::before {
+            content: "";
+            background: url(Womenbanner.png) no-repeat center/cover;
+            opacity: 0.89;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .categoryhead {
+            border: 4px solid darkmagenta;
+        }
+
+        .cat4 img {
+            height: 300px;
+            border-radius: 25px;
+        }
+
+        .cath {
+            color: darkmagenta;
+        }
+
+        .eximg img {
+            border: 3px ridge pink;
+        }
+
+        #btn {
+            color: antiquewhite;
+        }
+
+        @media (max-width: 1200px) {
+
+            #womenhome::before {
+                width: 100vh;
+                height: 115vh;
+            }
+
+            .eximg img {
+                border: 5px ridge pink;
+            }
+
+            .cat4 img {
+            height: 400px;
+            border-radius: 25px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Side Navigation -->
+
+<div class="sideNavContainer">
+    <i class="fa-regular fa-circle-xmark"></i>
+    <ul class="sideNav">
+        <li class="landingPages" style="margin-top: 0;">
+            <i class="fa-solid fa-angle-right"></i><a href="men.html">Men</a>
+            <ul class="subLandingPages">
+                <li><a href="Mensneakers.html">Sneakers</a></li>
+                <li><a href="Mensandals.html">Sandals</a></li>
+                <li><a href="Menpeshawarichappals.html">Peshawari Chappals</a></li>
+            </ul>
+        </li>
+        <li class="landingPages">
+            <i class="fa-solid fa-angle-right"></i><a href="women.html">Women</a>
+            <ul class="subLandingPages">
+                <li><a href="womenkhussas.html">Khussas</a></li>
+                <li><a href="womenchappals.html">Chappals</a></li>
+                <li><a href="womenheels.html">Heels</a></li>
+                <li><a href="womensandals.html">Sandals</a></li>
+                <li><a href="womensneakers.html">Sneakers</a></li>
+            </ul>
+        </li>
+        <li class="landingPages">
+            <i class="fa-solid fa-angle-right"></i><a href="adidas.html">Shop By Brand</a>
+            <ul class="subLandingPages">
+                <li><a href="adidas.html">Adidas</a></li>
+                <li><a href="ndure.html">Ndure</a></li>
+                <li><a href="calza.html">Calza</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="navBottom"></div>
+</div>
+
+    <!-- Navigation bar -->
+
+    <div class="line">
+        Free Delivery on all Orders above Rs. 2500.
+    </div>
+
+    <nav id="nav">
+
+        <i class="fa-solid fa-bars bars"></i>
+
+        <div class="logo">
+            <a href="index.html"><img src="mylogo.png" alt="Logo"></a>
+        </div>
+
+        <div class="listcontainer">
+            <ul class="mainlist" type="none">
+                <li><a href="men.html">Men</a>
+                    <ul type="none" class="sub">
+                        <a href="Mensneakers.html">
+                            <li>Sneakers</li>
+                        </a>
+                        <a href="Mensandals.html">
+                            <li>Sandals</li>
+                        </a>
+                        <a href="Menpeshawarichappals.html">
+                            <li>Peshawari Chappals</li>
+                        </a>
+                    </ul>
+                </li>
+                <li><a href="women.html" id="forWomen">Women</a>
+                    <ul type="none" class="sub">
+                        <a href="womenkhussas.html">
+                            <li>Khussas</li>
+                        </a>
+                        <a href="womenchappals.html">
+                            <li>Chappals</li>
+                        </a>
+                        <a href="womenheels.html">
+                            <li>Heels</li>
+                        </a>
+                        <a href="womensandals.html">
+                            <li>Sandals</li>
+                        </a>
+                        <a href="womensneakers.html">
+                            <li>Sneakers</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>Shop By Brand
+                    <ul type="none" class="sub">
+                        <a href="adidas.html">
+                            <li>Adidas</li>
+                        </a>
+                        <a href="ndure.html">
+                            <li>Ndure</li>
+                        </a>
+                        <a href="calza.html">
+                            <li>Calza</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+
+    <div id="womenhome">
+        <div id="text">
+
+            <div id="intro">
+
+                <h1 class="commonH" id="WomenH">Mega Sale</h1>
+
+                <div class="saleoffers">
+
+                    <div class="offer1 offer">
+                        <h3 class="offerh"> Save 25% on Heels </h3>
+                        <a href="womenheels.html"><img class="offerimg" src="heels1.png" alt="heels"></a>
+                    </div>
+
+                    <div class="offer2 offer">
+                        <h3 class="offerh">Save 50% on Sneakers</h3>
+                        <a href="womensneakers.html"><img src="sneakers.webp" alt="sneakers" class="offerimg"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Shop By Category -->
+
+        <div id="category">
+
+            <center>
+                <h1 class="sectionheads categoryhead">Shop Now</h1>
+            </center>
+
+            <div id="categories">
+
+                <div class="categoryimage cat1">
+                    <img src="khussa1.webp">
+                    <a href="womenkhussas.html">
+                        <h3 class="cath">Khussas</h3>
+                    </a>
+                </div>
+
+                <div class="categoryimage cat2">
+                    <img src="kolhapori1.webp">
+                    <a href="womenchappals.html">
+                        <h3 class="cath">Chappals</h3>
+                    </a>
+                </div>
+
+                <div class="categoryimage cat4">
+                    <img src="heels3.webp">
+                    <a href="womenheels.html">
+                        <h3 class="cath">Heels</h3>
+                    </a>
+                </div>
+
+                <div class="categoryimage cat3">
+                    <img src="snadal3.jpg">
+                    <a href="womensandals.html">
+                        <h3 class="cath">Sandals</h3>
+                    </a>
+                </div>
+
+                <div class="categoryimage cat5">
+                    <img src="sneakers2.webp">
+                    <a href="womensneakers.html">
+                        <h3 class="cath">Sneakers</h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Explore -->
+
+        <div id="explore">
+            <h1 class="sectionheads exhead">Explore - All Products</h1>
+
+            <div class="explorecontainer">
+                <!-- visible -->
+
+                <div id="visible">
+
+                    <div class="eximg eximg1">
+                        <img src="Ndure8.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg2">
+                        <img src="calza7.webp" alt="">
+                        <h1>Liza</h3>
+                    </div>
+                    <div class="eximg eximg3">
+                        <img src="calza8.webp" alt="">
+                        <h1>Liza</h3>
+                    </div>
+                    <div class="eximg eximg4">
+                        <img src="adidas1.avif" alt="">
+                        <h1>Adidas</h3>
+                    </div>
+                    <div class="eximg eximg5">
+                        <img src="ndure2.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg6">
+                        <img src="Ndure3.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg7">
+                        <img src="adidas2.avif" alt="">
+                        <h1>Adidas</h3>
+                    </div>
+                    <div class="eximg eximg8">
+                        <img src="adidas3.avif" alt="">
+                        <h1>Adidas</h3>
+                    </div>
+                </div>
+
+                <!-- Invisible -->
+
+                <div id="invisible" style="display: none;">
+
+                    <div class="eximg eximg9">
+                        <img src="calza3.webp" alt="">
+                        <h1>Liza</h3>
+                    </div>
+                    <div class="eximg eximg10">
+                        <img src="Ndure9.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg11">
+                        <img src="adidas7.avif" alt="">
+                        <h1>Adidas</h3>
+                    </div>
+                    <div class="eximg eximg12">
+                        <img src="Ndure4.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg13">
+                        <img src="adidas4.avif" alt="">
+                        <h1>Adidas</h3>
+                    </div>
+                    <div class="eximg eximg14">
+                        <img src="Ndure5.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg15">
+                        <img src="calza6.webp" alt="">
+                        <h1>Liza</h3>
+                    </div>
+                    <div class="eximg eximg16">
+                        <img src="adidas5.avif" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg17">
+                        <img src="calza10.webp" alt="">
+                        <h1>Liza</h3>
+                    </div>
+                    <div class="eximg eximg18">
+                        <img src="Ndure6.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg19">
+                        <img src="Ndure7.webp" alt="">
+                        <h1>Ndure</h3>
+                    </div>
+                    <div class="eximg eximg20">
+                        <img src="adidas6.avif" alt="">
+                        <h1>Adidas</h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <center><button id="btn" onclick="togglehide()">Show More</button></center>
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+
+            <div class="footer-content">
+
+                <div class="footer-section contact-info">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li>+92 306 2561378</li>
+                        <li>zapatos@gmail.com.pk</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section legal-info">
+                    <h4>Terms and Conditions</h4>
+                    <ul class="legal-list">
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="exchange.html">Exchange Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section about-info">
+                    <h4>About Us</h4>
+                    <ul class="about-list">
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zapatos - All Rights Reserved</p>
+            </div>
+
+        </footer>
+
+        <script>
+
+            let visible = document.getElementById('visible');
+            let invisible = document.getElementById('invisible');
+            let btn = document.getElementById('btn');
+
+            function togglehide() {
+
+                if (invisible.style.display != "flex") {
+                    invisible.style.display = "flex";
+                    btn.innerHTML = "Show Less";
+                }
+
+                else {
+                    invisible.style.display = "none";
+                    btn.innerHTML = "Show More";
+                }
+
+            }
+
+        </script>
+
+</body>
+
+</html>

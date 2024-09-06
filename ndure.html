@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="heroStyle.css">
+
+    <title>Ndure - All Products</title>
+</head>
+
+<body>
+
+    <!-- Side Navigation -->
+
+    <div class="sideNavContainer">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <ul class="sideNav">
+            <li class="landingPages" style="margin-top: 0;">
+                <i class="fa-solid fa-angle-right"></i><a href="men.html">Men</a>
+                <ul class="subLandingPages">
+                    <li><a href="Mensneakers.html">Sneakers</a></li>
+                    <li><a href="Mensandals.html">Sandals</a></li>
+                    <li><a href="Menpeshawarichappals.html">Peshawari Chappals</a></li>
+                </ul>
+            </li>
+            <li class="landingPages">
+                <i class="fa-solid fa-angle-right"></i><a href="women.html">Women</a>
+                <ul class="subLandingPages">
+                    <li><a href="womenkhussas.html">Khussas</a></li>
+                    <li><a href="womenchappals.html">Chappals</a></li>
+                    <li><a href="womenheels.html">Heels</a></li>
+                    <li><a href="womensandals.html">Sandals</a></li>
+                    <li><a href="womensneakers.html">Sneakers</a></li>
+                </ul>
+            </li>
+            <li class="landingPages">
+                <i class="fa-solid fa-angle-right"></i><a href="adidas.html">Shop By Brand</a>
+                <ul class="subLandingPages">
+                    <li><a href="adidas.html">Adidas</a></li>
+                    <li><a href="ndure.html">Ndure</a></li>
+                    <li><a href="calza.html">Calza</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navBottom"></div>
+    </div>
+
+    <!-- Navigation bar -->
+
+    <div class="line">
+        Free Delivery on all Orders above Rs. 2500.
+    </div>
+
+    <nav id="nav">
+
+        <i class="fa-solid fa-bars bars"></i>
+
+        <div class="logo">
+            <a href="index.html"><img src="mylogo.png" alt="Logo"></a>
+        </div>
+
+        <div class="listcontainer">
+            <ul class="mainlist" type="none">
+                <li><a href="men.html">Men</a>
+                    <ul type="none" class="sub">
+                        <a href="Mensneakers.html">
+                            <li>Sneakers</li>
+                        </a>
+                        <a href="Mensandals.html">
+                            <li>Sandals</li>
+                        </a>
+                        <a href="Menpeshawarichappals.html">
+                            <li>Peshawari Chappals</li>
+                        </a>
+                    </ul>
+                </li>
+                <li><a href="women.html" id="forWomen">Women</a>
+                    <ul type="none" class="sub">
+                        <a href="womenkhussas.html">
+                            <li>Khussas</li>
+                        </a>
+                        <a href="womenchappals.html">
+                            <li>Chappals</li>
+                        </a>
+                        <a href="womenheels.html">
+                            <li>Heels</li>
+                        </a>
+                        <a href="womensandals.html">
+                            <li>Sandals</li>
+                        </a>
+                        <a href="womensneakers.html">
+                            <li>Sneakers</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>Shop By Brand
+                    <ul type="none" class="sub">
+                        <a href="adidas.html">
+                            <li>Adidas</li>
+                        </a>
+                        <a href="ndure.html">
+                            <li>Ndure</li>
+                        </a>
+                        <a href="calza.html">
+                            <li>Calza</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="icons">
+            <div class="sideCart" data-tooltip="Your Cart">
+                <a><i class="fa-solid fa-cart-shopping icon" onclick="openmysidecart()" id="carticon"></i></a>
+            </div>
+        </div>
+
+    </nav>
+
+    <hr>
+
+    <!-- Shopping Cart -->
+
+    <div id="mysidecart">
+        <div class="header">
+            <h1 class="cartheading">Cart</h1>
+            <a onclick="closemysidecart()" class="closebtn" id="closebutton">&times;</a>
+        </div>
+
+        <div class="cartcontent">
+            <div class="cartitem" id="cartitemcontainer">
+                <p id="cartisempty">Your Cart Is Empty</p>
+                <div class="cartitemadded"></div>
+            </div>
+
+            <div id="footer">
+                <h2>Total</h2>
+                <h3 id="total">Rs 0</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Products -->
+
+    <h1>Ndure - All Products</h1>
+
+    <div class="Sneakers">
+
+        <div class="first sneakitem">
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsan1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" id="two" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsan2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsan3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsan4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+        </div>
+
+        <div class="second sneakitem">
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nh1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nh2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nh3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nh4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+        </div>
+
+        <div class="third sneakitem">
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm3.jpg" class="image">
+                <<h3>Ndure</h3>
+                    <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+        </div>
+
+        <div class="fourth sneakitem">
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="np1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="np2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="np3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="np4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+        </div>
+
+        <div class="fifth sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsw1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsw2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsw3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsw4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+        </div>
+
+        <div class="sixth sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm5.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,990</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm6.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,990</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm7.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,990</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm8.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,990</p>
+            </div>
+        </div>
+
+        <div class="seventh sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="ncp1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="ncp2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="ncp3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="ncp4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+        </div>
+
+        <div class="eighth sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 3,900</p>
+            </div>
+        </div>
+
+        <div class="ninth sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm9.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm10.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm11.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm12.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+        </div>
+
+        <div class="tenth sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw1.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw2.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw3.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsaw4.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+        </div>
+
+        <div class="eleventh sneakitem">
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm6.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm7.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm8.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+
+            <div class="sneakimages">
+
+                <div class="addtocart" data-tooltip="Add To Cart">
+                    <img src="blankcart.png" class="cart">
+                </div>
+
+                <img src="nsm9.jpg" class="image">
+                <h3>Ndure</h3>
+                <p class="priceofitem">Rs 4,000</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <ul class="contact-list">
+                    <li>+92 306 2561378</li>
+                    <li>zapatos@gmail.com.pk</li>
+                </ul>
+            </div>
+
+            <div class="footer-section legal-info">
+                <h4>Terms and Conditions</h4>
+                <ul class="legal-list">
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="exchange.html">Exchange Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section about-info">
+                <h4>About Us</h4>
+                <ul class="about-list">
+                    <li><a href="reviews.html">Customer Reviews</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zapatos - All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="heroScript.js"></script>
+</body>
+
+</html>
+
+
+</body>
+
+</html>

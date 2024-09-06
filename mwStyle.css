@@ -1,0 +1,553 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: roboto;
+}
+
+/* side navigation */
+
+.sideNavContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    position: fixed;
+    width: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    font-size: 70px;
+    transition: width 0.5s ease, padding 0.5s ease;
+}
+
+.fa-circle-xmark{
+    font-size: 60px;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+.sideNavContainer ul{
+    list-style: none;
+}
+
+.sideNavContainer a {
+    color: black;
+    text-decoration: none;
+}
+
+.sideNav > li{
+    margin-top: 150px;
+}
+
+.landingPages > a {
+    border-bottom: 5px solid black; 
+    margin-left: 30px;
+}
+
+.subLandingPages{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.subLandingPages li{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.subLandingPages li a{
+    color: rgb(8, 8, 80);
+}
+
+.navBottom{
+    background-color: midnightblue;
+    width: 100%;
+    height: 2%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+/* Navigation bar */
+
+.line {
+    background-color: black;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    height: 60px;
+}
+
+.fa-bars {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    font-size: 30px;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 100px;
+    margin: 15px 60px;
+    cursor: pointer;
+}
+
+.listcontainer {
+    width: 70%;
+}
+
+.mainlist {
+    display: flex;
+    margin-left: 74px;
+    gap: 40px;
+    align-items: center;
+}
+
+nav ul li {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-family: roboto;
+    margin: 7px 22px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+}
+
+#forWomen {
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.sub {
+    display: none;
+}
+
+.sub li {
+    font-weight: normal;
+}
+
+nav ul li:hover .sub {
+    display: block;
+    background-color: white;
+    color: black;
+    position: absolute;
+    font-weight: 100;
+}
+
+nav ul li:hover .sub li:hover {
+    background-color: midnightblue;
+    color: white;
+    border-radius: 10px;
+}
+
+/*Home Section*/
+
+.commonH {
+    font-size: 100px;
+    font-family: Lobster;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.saleoffers {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 23px;
+}
+
+.offerh {
+    font-family: Lobster;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.offerimg {
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+/* Shop By Category */
+
+#category {
+    margin-top: 90px;
+    position: relative;
+}
+
+.sectionheads {
+    font-family: roboto;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.categoryhead {
+    border-radius: 50px;
+    width: 50%;
+}
+
+#categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.categoryimage {
+    margin: 12px;
+    position: relative;
+}
+
+.categoryimage img {
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.categoryimage:hover img {
+    transform: translateX(-100%);
+}
+
+.cath {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Lobster;
+    font-weight: 100;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.categoryimage:hover .cath {
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.cath:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Explore */
+
+#explore {
+    position: relative;
+}
+
+.explorecontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#visible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 23px;
+}
+
+#invisible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 23px;
+}
+
+.eximg img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.eximg h1 {
+    font-family: roboto;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#btn {
+    outline: 0;
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    color: lightcyan;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: 4px 4px lightgray;
+}
+
+/* footer */
+
+footer {
+    height: 70vh;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    gap: 10%;
+    height: 70%;
+}
+
+.footer-section h4 {
+    color: darkturquoise;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.footer-section ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contact-info ul li:hover {
+    text-decoration: none;
+    cursor: auto;
+}
+
+.hr {
+    width: 95%;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+
+    html {
+        width: 100vh;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    /* Navigation */
+
+    nav {
+        justify-content: center;
+        position: relative;
+        border-bottom: 2px solid;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .logo img {
+        width: 200px;
+        margin: 0;
+        margin-left: 40px;
+    }
+
+    .fa-bars {
+        display: block;
+        cursor: pointer;
+        top: 25px;
+    }
+
+    .listcontainer {
+        display: none;
+    }
+
+    .sign {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #icons {
+        position: absolute;
+        width: fit-content;
+        right: 50px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    /* Home */
+
+    .saleoffers {
+        flex-direction: column;
+    }
+
+    .offerh {
+        text-align: center;
+        width: max-content;
+        margin-bottom: 20px;
+    }
+
+    /* Explore */
+
+    .exhead {
+        font-size: 70px;
+    }
+
+    .eximg {
+        font-size: 25px;
+    }
+
+    .eximg img {
+        width: 300px;
+    }
+
+    #btn {
+        padding: 30px;
+        margin: 30px;
+        font-size: 30px;
+        border-radius: 50px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 100vh;
+        font-size: 24px;
+        margin-top: 0px;
+        display: block;
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80%;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-left: 30px;
+        font-size: 30px;
+    }
+
+    .footer-section h4 {
+        font-size: 30px;
+    }
+
+    .about-info {
+        margin-bottom: 350px;
+    }
+
+    .hr {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 30px;
+    }
+
+    /* Category */
+
+    .categoryhead {
+        font-size: 80px;
+    }
+
+    #categories {
+        padding-bottom: 30px;
+    }
+
+    .categoryimage {
+        margin: 50px;
+    }
+
+    .categoryimage:hover img {
+        transform: none;
+    }
+
+    .cath {
+        top: 100%;
+        left: 50%;
+        opacity: 1;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: max-content;
+        font-size: 70px;
+    }
+
+    .categoryimage:hover .cath {
+        transition: none
+    }
+
+    .categoryimage img {
+        height: 350px;
+    }
+
+}

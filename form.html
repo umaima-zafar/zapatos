@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: roboto;
+        }
+
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 55vh;
+            height: 67vh;
+            padding: 20px;
+            padding-top: 5px;
+            border: 2px solid;
+            color: midnightblue;
+            position: relative;
+        }
+
+        form h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            margin-top: 30px;
+        }
+
+        .input-field label {
+            font-weight: 900;
+        }
+
+        .input-field input {
+            border: 0;
+            outline: 0;
+            padding: 4px;
+            border-bottom: 2px solid midnightblue;
+        }
+
+        input::placeholder {
+            color: black;
+        }
+
+        .input-field span {
+            position: absolute;
+            right: 20px;
+            font-size: 12px;
+            color: rgb(216, 28, 28);
+        }
+
+        .submit-btn {
+            border: 0;
+            outline: 0;
+            margin-top: 25px;
+            cursor: pointer;
+            padding: 5px;
+            height: 30px;
+            width: 70px;
+            background-color: black;
+            color: white;
+        }
+
+        .submitted-msg{
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .submit-head{
+            color: midnightblue;
+        }
+
+        p i{
+            color: blue;
+            font-size: 40px;
+        }
+
+        .goback-link{
+            color: darkblue;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="submitted-msg">
+        <h2 class="submit-head">Signed Up Successfully</h2>
+        <p><i class="fa-solid fa-circle-check"></i></p>
+        <a href="index.html" class="goback-link">Back</a>
+    </div>
+    
+    <div class="form-container">
+        <form name="submit-to-google-sheet">
+            <h1>Sign Up</h1>
+
+            <div class="input-field">
+                <label>Full Name</label>
+                <input name="Name" id="name" type="text" placeholder="Enter your full name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label>Phone Number</label>
+                <input name="Phone Number" id="phone" type="tel" placeholder="124 4567890" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label>Email</label>
+                <input name="Email" id="email" type="email" placeholder="Enter your email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <button class="submit-btn" type="submit" onclick="validateForm()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // FORM VALIDATION
+        let nameError = document.querySelector("#name-error");
+        let phoneError = document.querySelector("#phone-error");
+        let emailError = document.querySelector("#email-error");
+        let submitBtn = document.querySelector(".submit-btn");
+
+        function validateName() {
+            let name = document.querySelector("#name").value;
+
+            if (name.length === 0) {
+                nameError.innerHTML = "*name is required";
+                return false;
+            } else if (!name.match(/^[A-Za-z]+\s[A-Za-z]+$/)) {
+                nameError.innerHTML = "*enter full name";
+                return false;
+            } else {
+                nameError.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #00ff00;"></i>`;
+                return true;
+            }
+        }
+
+        function validatePhone() {
+            let phone = document.querySelector("#phone").value;
+
+            if (phone.length === 0) {
+                phoneError.innerHTML = "*phone is required";
+                return false;
+            } else if (!phone.match(/^[0-9]{3} [0-9]{7}$/)) {
+                phoneError.innerHTML = "*phone number should be 10 digits";
+                return false;
+            } else {
+                phoneError.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #00ff00;"></i>`;
+                return true;
+            }
+        }
+
+        function validateEmail() {
+            let email = document.querySelector("#email").value;
+
+            if (email.length === 0) {
+                emailError.innerHTML = "*email is required";
+                return false;
+            } else if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                emailError.innerHTML = "*invalid email";
+                return false;
+            } else {
+                emailError.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #00ff00;"></i>`;
+                return true;
+            }
+        }
+
+        function validateForm() {
+            let isNameValid = validateName();
+            let isPhoneValid = validatePhone();
+            let isEmailValid = validateEmail();
+            let submittedMsg = document.querySelector(".submitted-msg")
+
+            if (isNameValid && isPhoneValid && isEmailValid) {
+                form.style.display = 'none';
+                submittedMsg.style.display = 'flex';
+            } else {
+                alert("Please correct the errors in the form.");
+            }
+        }
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3QhRmP3_oc9e-XW1_m_7e1xcZc5n2rIW19FWZi9ku85gX-sQOOaggEonBo5M0CF4wtg/exec';
+        const form = document.forms['submit-to-google-sheet'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response);
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
